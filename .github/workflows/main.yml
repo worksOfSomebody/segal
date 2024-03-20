@@ -20,4 +20,5 @@ jobs:
           port: 22
           user: "eloremi1"
           pass: "sadra123"
+          scp : ls
       
