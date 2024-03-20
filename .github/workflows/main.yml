@@ -1,0 +1,23 @@
+name: Angular CI/CD And Depoly
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Start SSH
+        uses: Tofandel/ssh-server-action@v1.0.0
+        with:
+          hostname: 'elorem.ir'
+          port: 22
+          user_name: "eloremi1"
+          user_password: "sadra123"
+      
