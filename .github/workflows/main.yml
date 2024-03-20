@@ -13,11 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         
-      - name: Start SSH
-        uses: Tofandel/ssh-server-action@v1.0.0
+      - name: ssh-scp-ssh-pipelines
+        uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.4
         with:
-          hostname: 'elorem.ir'
+          host: 'elorem.ir'
           port: 22
-          user_name: "eloremi1"
-          user_password: "sadra123"
+          user: "eloremi1"
+          pass: "sadra123"
       
